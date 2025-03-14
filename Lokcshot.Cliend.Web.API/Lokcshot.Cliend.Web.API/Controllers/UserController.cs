@@ -1,10 +1,6 @@
 ﻿using Lokcshot.Cliend.Web.API.Core.Interfaces;
-using Discord.User.Models.Friends.Request;
-using Discord.User.Models.Friends.Response;
 using Discord.Common.FriendsManagement;
 using Microsoft.AspNetCore.Mvc;
-using Discord.User.Models.User.Response;
-using Discord.User.Models.User.Request;
 using Microsoft.AspNetCore.Authorization;
 using Refit;
 

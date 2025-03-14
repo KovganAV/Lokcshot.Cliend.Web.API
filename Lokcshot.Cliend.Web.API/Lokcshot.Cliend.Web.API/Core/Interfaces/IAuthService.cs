@@ -1,15 +1,14 @@
-﻿using Lokcshot.Cliend.Web.API.Core.Classes;
-using Discord.User.Models.User.Response;
-using System.Security.Claims;
+﻿//using Lokcshot.Cliend.Web.API.Core.Classes;
+//using System.Security.Claims;
 
-namespace Lokcshot.Cliend.Web.API.Core.Interfaces
-{
-    public interface IAuthService
-    {
-        ClaimsPrincipal ValidateToken(string token);
+//namespace Lokcshot.Cliend.Web.API.Core.Interfaces
+//{
+//    public interface IAuthService
+//    {
+//        ClaimsPrincipal ValidateToken(string token);
 
-        AuthTokens CreateTokens(UserFullResponseModel userModel);
+//        AuthTokens CreateTokens(UserFullResponseModel userModel);
 
-        string GenerateToken(UserFullResponseModel userModel, DateTime expires);
-    }
-}
+//        string GenerateToken(UserFullResponseModel userModel, DateTime expires);
+//    }
+//}

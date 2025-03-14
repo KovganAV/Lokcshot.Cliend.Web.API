@@ -1,7 +1,6 @@
 using Lokcshot.Cliend.Web.API;
 using Lokcshot.Cliend.Web.API.Core.Interfaces;
 using Lokcshot.Cliend.Web.API.Core.Services;
-using discord.client.webapi.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;

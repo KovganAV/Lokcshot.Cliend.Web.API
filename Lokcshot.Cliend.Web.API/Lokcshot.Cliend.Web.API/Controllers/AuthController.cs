@@ -1,8 +1,7 @@
 ﻿using Lokcshot.Cliend.Web.API.Core.Classes;
 using Lokcshot.Cliend.Web.API.Core.Interfaces;
 using Lokcshot.Cliend.Web.API.Core.Methods;
-using Discord.User.Models.User.Request;
-using Discord.User.Models.User.Response;
+using Lockshot.User.API.Class;
 using Microsoft.AspNetCore.Mvc;
 using Refit;
 using System.Net;
@@ -25,7 +24,7 @@ namespace Lokcshot.Cliend.Web.API.Controllers
 
         [Microsoft.AspNetCore.Authorization.Authorize]
         [HttpGet("getAllUsers")]
-        public async Task<ActionResult<IEnumerable<UserFullResponseModel>>> Get()
+        public async Task<ActionResult<IEnumerable<User>>> Get()
         {
             var users = await _userRefit.GetAllUsers();
             return Ok(users);
@@ -33,7 +32,7 @@ namespace Lokcshot.Cliend.Web.API.Controllers
 
         [Microsoft.AspNetCore.Authorization.Authorize]
         [HttpGet("getUser/{id}")]
-        public async Task<ActionResult<UserFullResponseModel>> GetUser(Guid id)
+        public async Task<ActionResult<User>> GetUser(Guid id)
         {
             try
             {
@@ -47,7 +46,7 @@ namespace Lokcshot.Cliend.Web.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<AuthTokens>> Login(UserLoginModel loginModel)
+        public async Task<ActionResult<AuthTokens>> Login(LoginUserDto loginModel)
         {
             try
             {
@@ -63,7 +62,7 @@ namespace Lokcshot.Cliend.Web.API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<string>> Register(UserCreateModel createModel)
+        public async Task<ActionResult<string>> Register(RegisterUserDto createModel)
         {
             try
             {

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Concurrent;
-using Microsoft.AspNet.SignalR.Infrastructure;
+//using Microsoft.AspNet.SignalR.Infrastructure;
 using Microsoft.AspNetCore.SignalR;
 using Proof_of_Concept.Model;
 

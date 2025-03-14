@@ -1,7 +1,6 @@
 ﻿using Lokcshot.Cliend.Web.API.Core.Interfaces;
-using Discord.AiBots.Models.Request;
-using Discord.AiBots.Models.Response;
 using Microsoft.AspNetCore.Mvc;
+using Discord.Common.Bots;
 using Refit;
 
 namespace Lokcshot.Cliend.Web.API.Controllers

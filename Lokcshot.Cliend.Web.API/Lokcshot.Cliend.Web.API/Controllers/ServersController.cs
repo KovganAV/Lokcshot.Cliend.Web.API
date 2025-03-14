@@ -1,10 +1,5 @@
 ﻿using Lokcshot.Cliend.Web.API.Core.Interfaces;
-using Discord.Channels.Models.Channels.Requests;
-using Discord.Channels.Models.Channels.Responses;
-using Discord.Channels.Models.Messages.Requests;
-using Discord.Channels.Models.Messages.Responses;
-using Discord.Channels.Models.Servers.Requests;
-using Discord.Channels.Models.Servers.Responses;
+using Discord.Common;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lokcshot.Cliend.Web.API.Controllers

@@ -1,5 +1,5 @@
 ﻿using Lokcshot.Cliend.Web.API.Core.Interfaces;
-using discord.client.webapi.Settings;
+using Lokcshot.Cliend.Web.API.Settings;
 using Refit;
 
 namespace discord.client.webapi
